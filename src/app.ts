@@ -63,7 +63,7 @@ app.get("/Y3AxLTE=", (req: Request, res: Response) => {
     password: team1[0],
     team_id: 1,
     className: "cp1-1",
-    clue: "Esimene vihje",
+    clue: "Hommikune betoon-post",
     btn_id: 1,
   })
 });
@@ -74,7 +74,7 @@ app.get("/Y3AxLTI=", (req: Request, res: Response) => {
     title: "Teine vihje",
     password: team1[1],
     className: "cp1-2",
-    clue: "Teine vihje",
+    clue: "Metallist märge",
     team_id: 1,
     btn_id: 2,
   })
@@ -87,7 +87,7 @@ app.get("/Y3AxLTM=", (req: Request, res: Response) => {
     password: team1[2],
     team_id: 1,
     className: "cp1-3",
-    clue: "Kolmas vihje",
+    clue: "Koht kus sai minevikus saadetisi reaalsusest kätte",
     btn_id: 3,
   })
 });
@@ -111,7 +111,7 @@ app.get("/Y3AxLTU=", (req: Request, res: Response) => {
     password: team1[4],
     team_id: 1,
     className: "cp1-5",
-    clue: "Viies vihje",
+    clue: "Haikala",
     btn_id: 5,
   })
 });
@@ -166,6 +166,40 @@ app.get("/Y3AyLTQ=", (req: Request, res: Response) => {
 
 // cp2-5
 app.get("/Y3AyLTU=", (req: Request, res: Response) => {
+  res.render("clue_gen.hbs", {
+    title: "Viies vihje",
+    password: team2[4],
+    team_id: 2,
+    className: "cp2-5",
+    clue: "Viies vihje",
+    btn_id: 5,
+  })
+});
+
+// cp1-final
+app.get("/cp1f", (req: Request, res: Response) => {
+  res.render("final.hbs", {
+    title: "Viies vihje",
+    team_id: 1,
+    body_class: "landing",
+    layout: "landing",
+    password: "k0te"
+  })
+});
+
+// cp2-final
+app.get("/2fcp", (req: Request, res: Response) => {
+  res.render("final.hbs", {
+    title: "Viies vihje",
+    team_id: 2,
+    body_class: "landing",
+    layout: "landing",
+    password: "rm4nn"
+  })
+});
+
+// Map
+app.get("/final", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Viies vihje",
     password: team2[4],
