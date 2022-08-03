@@ -72,9 +72,9 @@ app.get("/Y3AxLTI=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Teine vihje",
     password: team1[1],
-    script: "/media/scripts/team_one_one.js",
     className: "cp1-2",
     clue: "Teine vihje",
+    script: "/media/scripts/team_one_one.js",
   })
 });
 
@@ -116,6 +116,9 @@ app.get("/Y3AyLTE=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Esimene vihje",
     password: team2[0],
+    script: "/media/scripts/team_one_two.js",
+    className: "cp2-1",
+    clue: "Esimene vihje",
   })
 });
 
@@ -124,6 +127,9 @@ app.get("/Y3AyLTI=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Teine vihje",
     password: team2[1],
+    script: "/media/scripts/team_one_two.js",
+    className: "cp2-2",
+    clue: "Teine vihje",
   })
 });
 
@@ -132,6 +138,9 @@ app.get("/Y3AyLTM=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Kolmas vihje",
     password: team2[2],
+    script: "/media/scripts/team_one_two.js",
+    className: "cp2-3",
+    clue: "Kolmas vihje",
   })
 });
 
@@ -140,6 +149,9 @@ app.get("/Y3AyLTQ=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Neljas vihje",
     password: team2[3],
+    script: "/media/scripts/team_one_two.js",
+    className: "cp2-4",
+    clue: "Neljas vihje",
   })
 });
 
@@ -148,6 +160,9 @@ app.get("/Y3AyLTU=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Viies vihje",
     password: team2[4],
+    script: "/media/scripts/team_one_two.js",
+    className: "cp2-5",
+    clue: "Viies vihje",
   })
 });
 
