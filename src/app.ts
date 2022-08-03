@@ -1,6 +1,9 @@
 import express, {Request, Response} from "express";
 import {create} from "express-handlebars";
 import path from "path";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 import {team1, team2} from "./passwords";
 
@@ -108,6 +111,6 @@ app.get("/Y3AyLTU=", (req: Request, res: Response) => {
 });
 
 export const runApp = () => {
-  const port = 4000;
+  const port = process.env.PORT || 3000;
   app.listen(port, () => console.log(`App listening on port ${port}`));
 }
