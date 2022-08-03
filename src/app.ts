@@ -24,8 +24,36 @@ app.use(express.static("public"));
 app.get("/", (req: Request, res: Response) => {
   res.render("index", {
     title: "Ööhäire 2022",
-    body_class: "landing"
+    body_class: "landing",
+    layout: "landing"
   });
+});
+
+// Backstory alpha
+app.get("/YWxwaGE=", (req: Request, res: Response) => {
+  res.render("bst1", {
+    title: "Backstory 1",
+    body_class: "landing",
+    layout: "landing"
+  })
+});
+
+// Backstory beta
+app.get("/YmV0YQ==", (req: Request, res: Response) => {
+  res.render("bst2", {
+    title: "Backstory 2",
+    body_class: "landing",
+    layout: "landing"
+  })
+});
+
+// Backstory gamma
+app.get("/Z2FtbWE=", (req: Request, res: Response) => {
+  res.render("bst3", {
+    title: "Backstory 3",
+    body_class: "landing",
+    layout: "landing",
+  })
 });
 
 // cp1-1

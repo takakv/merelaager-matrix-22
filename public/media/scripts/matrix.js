@@ -9,7 +9,7 @@
 
   function resizeCanvas() {
     c.width = window.innerWidth;
-    c.height = document.querySelector("body").clientHeight;//window.innerHeight;
+    c.height = window.innerHeight;
 
     /**
      * Your drawings need to be inside this function otherwise they will be reset when
@@ -63,5 +63,3 @@
 })();
 
 // setInterval(draw, 35);
-
-console.log(document.querySelector("body").clientHeight);
