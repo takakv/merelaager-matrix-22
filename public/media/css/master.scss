@@ -308,9 +308,19 @@ button {
     display: inline-block;
     padding: 1em;
     text-align: center;
+    color: #fff;
     border: 2px solid var(--primary);
     border-radius: 8px;
     background-color: #000;
-    color: #fff;
+  }
+}
+
+.c-final {
+  margin: 0 1em;
+  padding-top: 1em;
+  border-top: 2px solid var(--primary);
+
+  input {
+    margin: 1em 0;
   }
 }

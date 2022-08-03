@@ -202,13 +202,10 @@ app.get("/2fcp", (req: Request, res: Response) => {
 
 // Map
 app.get("/final", (req: Request, res: Response) => {
-  res.render("clue_gen.hbs", {
-    title: "Viies vihje",
-    password: team2[4],
-    team_id: 2,
-    className: "cp2-5",
-    clue: "Viies vihje",
-    btn_id: 5,
+  res.render("finalmap.hbs", {
+    title: "",
+    layout: "landing",
+    body_class: "landing",
   })
 });
 
