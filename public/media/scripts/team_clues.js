@@ -19,7 +19,7 @@ const forbid = (el) => {
 }
 
 for (const btn of submitBtn) {
-  const i = parseInt(btn.id.slice(-1)) - 1;
+  const i = parseInt(btn.id) - 1;
 
   btn.onclick = e => {
     if (pwdField[i].value === team[i]) {

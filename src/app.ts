@@ -64,6 +64,7 @@ app.get("/Y3AxLTE=", (req: Request, res: Response) => {
     team_id: 1,
     className: "cp1-1",
     clue: "Esimene vihje",
+    btn_id: 1,
   })
 });
 
@@ -75,6 +76,7 @@ app.get("/Y3AxLTI=", (req: Request, res: Response) => {
     className: "cp1-2",
     clue: "Teine vihje",
     team_id: 1,
+    btn_id: 2,
   })
 });
 
@@ -86,6 +88,7 @@ app.get("/Y3AxLTM=", (req: Request, res: Response) => {
     team_id: 1,
     className: "cp1-3",
     clue: "Kolmas vihje",
+    btn_id: 3,
   })
 });
 
@@ -97,6 +100,7 @@ app.get("/Y3AxLTQ=", (req: Request, res: Response) => {
     team_id: 1,
     className: "cp1-4",
     clue: "Neljas vihje",
+    btn_id: 4,
   })
 });
 
@@ -108,6 +112,7 @@ app.get("/Y3AxLTU=", (req: Request, res: Response) => {
     team_id: 1,
     className: "cp1-5",
     clue: "Viies vihje",
+    btn_id: 5,
   })
 });
 
@@ -119,6 +124,7 @@ app.get("/Y3AyLTE=", (req: Request, res: Response) => {
     team_id: 2,
     className: "cp2-1",
     clue: "Esimene vihje",
+    btn_id: 1,
   })
 });
 
@@ -130,6 +136,7 @@ app.get("/Y3AyLTI=", (req: Request, res: Response) => {
     team_id: 2,
     className: "cp2-2",
     clue: "Teine vihje",
+    btn_id: 2,
   })
 });
 
@@ -141,6 +148,7 @@ app.get("/Y3AyLTM=", (req: Request, res: Response) => {
     team_id: 2,
     className: "cp2-3",
     clue: "Kolmas vihje",
+    btn_id: 3,
   })
 });
 
@@ -152,6 +160,7 @@ app.get("/Y3AyLTQ=", (req: Request, res: Response) => {
     team_id: 2,
     className: "cp2-4",
     clue: "Neljas vihje",
+    btn_id: 4,
   })
 });
 
@@ -163,6 +172,7 @@ app.get("/Y3AyLTU=", (req: Request, res: Response) => {
     team_id: 2,
     className: "cp2-5",
     clue: "Viies vihje",
+    btn_id: 5,
   })
 });
 
