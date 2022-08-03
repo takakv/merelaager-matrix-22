@@ -298,3 +298,19 @@ button {
 .c-finalpwd {
   margin: 0 1em;
 }
+
+.c-fpf {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+
+  p {
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+  }
+}

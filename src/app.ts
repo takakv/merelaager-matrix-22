@@ -179,10 +179,10 @@ app.get("/Y3AyLTU=", (req: Request, res: Response) => {
 // cp1-final
 app.get("/cp1f", (req: Request, res: Response) => {
   res.render("final.hbs", {
-    title: "Viies vihje",
+    title: "Lõpp-parool 1",
     team_id: 1,
     body_class: "landing",
-    layout: "landing",
+    layout: "final",
     password: "k0te",
     half: "1/2",
   })
@@ -191,10 +191,10 @@ app.get("/cp1f", (req: Request, res: Response) => {
 // cp2-final
 app.get("/2fcp", (req: Request, res: Response) => {
   res.render("final.hbs", {
-    title: "Viies vihje",
+    title: "Lõpp-parool 2",
     team_id: 2,
     body_class: "landing",
-    layout: "landing",
+    layout: "final",
     password: "rm4nn",
     half: "2/2",
   })
