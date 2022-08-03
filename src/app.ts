@@ -63,7 +63,7 @@ app.get("/Y3AxLTE=", (req: Request, res: Response) => {
     password: team1[0],
     team_id: 1,
     className: "cp1-1",
-    clue: "Hommikune betoon-post",
+    clue: "Projektirammes püstitati katsealale antenn, mis edastas infot peakontorisse. Tänaseks päevaks on sellest säilinud vaid betoonpost.",
     btn_id: 1,
   })
 });
@@ -74,7 +74,7 @@ app.get("/Y3AxLTI=", (req: Request, res: Response) => {
     title: "Teine vihje",
     password: team1[1],
     className: "cp1-2",
-    clue: "Metallist märge",
+    clue: "Keset põldu on turvatsoon, kus ei ole miine. Tänapäeval kasvab seal selle märgistamiseks puu, mis on teistest kõrgem. Seda puud on võimalik silmata hommikujooksu ringil.",
     team_id: 1,
     btn_id: 2,
   })
@@ -87,7 +87,7 @@ app.get("/Y3AxLTM=", (req: Request, res: Response) => {
     password: team1[2],
     team_id: 1,
     className: "cp1-3",
-    clue: "Koht kus sai minevikus saadetisi reaalsusest kätte",
+    clue: "Et välismaailmast anomaaliasse saadetisi edastada, tekitati pakipostipunkt. Tänaseks päevaks on sellest alles vaid mälestus.",
     btn_id: 3,
   })
 });
@@ -99,7 +99,7 @@ app.get("/Y3AxLTQ=", (req: Request, res: Response) => {
     password: team1[3],
     team_id: 1,
     className: "cp1-4",
-    clue: "Neljas vihje",
+    clue: "Hoomikujooksu ringil, et anomaaliat vältida, meeldib lastele joosta lühemat teed (lõigata). Lõikepunkti tähistab puu.",
     btn_id: 4,
   })
 });
@@ -111,7 +111,7 @@ app.get("/Y3AxLTU=", (req: Request, res: Response) => {
     password: team1[4],
     team_id: 1,
     className: "cp1-5",
-    clue: "Haikala",
+    clue: "Laste järelevalve teostamiseks lisati laagri kommandosse veok, mis kindlustas merepealse järelvalve.",
     btn_id: 5,
   })
 });
@@ -123,7 +123,7 @@ app.get("/Y3AyLTE=", (req: Request, res: Response) => {
     password: team2[0],
     team_id: 2,
     className: "cp2-1",
-    clue: "Esimene vihje",
+    clue: "Neli jaama väljumispunkti aitasid ja aitavad lastel end anomaaliast kergendada. Jaama tähistab kaks sümbolit, mis on kõigile tänaseks ajju sööbinud.",
     btn_id: 1,
   })
 });
@@ -135,7 +135,7 @@ app.get("/Y3AyLTI=", (req: Request, res: Response) => {
     password: team2[1],
     team_id: 2,
     className: "cp2-2",
-    clue: "Teine vihje",
+    clue: "Kaugjuhtimine on võimalik just selle vahendiga. Vanasti tüüriti sellega suurlaeva, siis kui see veel merel seilas.",
     btn_id: 2,
   })
 });
@@ -147,7 +147,7 @@ app.get("/Y3AyLTM=", (req: Request, res: Response) => {
     password: team2[2],
     team_id: 2,
     className: "cp2-3",
-    clue: "Kolmas vihje",
+    clue: "Laagrisse saabudes tervitab külastajaid valvur, keda küll selles vahetuses ei ole. Säilinud on aga selle karvase valvuri puhkekoht.",
     btn_id: 3,
   })
 });
@@ -159,7 +159,7 @@ app.get("/Y3AyLTQ=", (req: Request, res: Response) => {
     password: team2[3],
     team_id: 2,
     className: "cp2-4",
-    clue: "Neljas vihje",
+    clue: "Laagrialal on padrik, mis tagab lastele rohelisuse. Tüdrukud käivad seal tugeva anomaalia tõttu harva, ent poisid käivad seal sagedamini.",
     btn_id: 4,
   })
 });
@@ -171,7 +171,7 @@ app.get("/Y3AyLTU=", (req: Request, res: Response) => {
     password: team2[4],
     team_id: 2,
     className: "cp2-5",
-    clue: "Viies vihje",
+    clue: "Laste tervise monitoorimiseks lisati laste elamsikohta skanneeria, mis edastab hommikuti ja õhtuti andmeid laste tervise kohta.",
     btn_id: 5,
   })
 });
