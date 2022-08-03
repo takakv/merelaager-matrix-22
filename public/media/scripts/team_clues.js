@@ -5,8 +5,8 @@ const team_id = parseInt(document.body.id);
 
 const team = team_id === 1 ? team2 : team1;
 
-const pwdField = [...document.getElementsByClassName("pwd")];
-const submitBtn = document.getElementsByClassName("submit-btn");
+const pwdField = document.getElementById("pwd");
+const submitBtn = [...document.getElementsByClassName("submit-btn")][0];
 
 const cluebox = document.getElementById("clue");
 let tripwire = false;
@@ -18,21 +18,19 @@ const forbid = (el) => {
   }, 3000);
 }
 
-for (const btn of submitBtn) {
-  const i = parseInt(btn.id) - 1;
+const i = parseInt(submitBtn.id) - 1;
 
-  btn.onclick = e => {
-    if (pwdField[i].value === team[i]) {
-      cluebox.classList.remove("is-hidden");
-      if (!tripwire) {
-        typewriter();
-        tripwire = true;
-      }
-    } else {
-      forbid(btn.parentElement);
+submitBtn.onclick = () => {
+  if (pwdField.value === team[i]) {
+    cluebox.classList.remove("is-hidden");
+    if (!tripwire) {
+      typewriter();
+      tripwire = true;
     }
-  };
-}
+  } else {
+    forbid(submitBtn.parentElement);
+  }
+};
 
 // set up text to print, each item in array is new line
 let aText = new Array(cluebox.innerText);
