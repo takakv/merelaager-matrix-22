@@ -10,13 +10,13 @@
   <link href="/media/css/master.min.css" rel="stylesheet" type="text/css"/>
   <script async defer src="/media/scripts/matrix.js" type="module"></script>
 </head>
-<body>
+<body id="{{team_id}}">
 <canvas id="c"></canvas>
 {{>header}}
 <main role="main">
   {{>password}}
   {{{body}}}
-  <script src="{{script}}" type="module"></script>
+  <script src="/media/scripts/team_clues.js" type="module"></script>
 </main>
 {{>footer}}
 </body>

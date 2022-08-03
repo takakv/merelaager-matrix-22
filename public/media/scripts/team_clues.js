@@ -1,6 +1,10 @@
 const team1 = ["pautoinas", "saiborg", "terminaator", "must peegel", "universaal-universium"];
 const team2 = ["pokuism", "glitch", "neo", "dimensioon kaks", "synthwave"];
 
+const team_id = parseInt(document.body.id);
+
+const team = team_id === 1 ? team2 : team1;
+
 const pwdField = [...document.getElementsByClassName("pwd")];
 const submitBtn = document.getElementsByClassName("submit-btn");
 
@@ -18,7 +22,7 @@ for (const btn of submitBtn) {
   const i = parseInt(btn.id.slice(-1)) - 1;
 
   btn.onclick = e => {
-    if (pwdField[i].value === team1[i]) {
+    if (pwdField[i].value === team[i]) {
       cluebox.classList.remove("is-hidden");
       if (!tripwire) {
         typewriter();
