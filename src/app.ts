@@ -183,7 +183,8 @@ app.get("/cp1f", (req: Request, res: Response) => {
     team_id: 1,
     body_class: "landing",
     layout: "landing",
-    password: "k0te"
+    password: "k0te",
+    half: "1/2",
   })
 });
 
@@ -194,7 +195,8 @@ app.get("/2fcp", (req: Request, res: Response) => {
     team_id: 2,
     body_class: "landing",
     layout: "landing",
-    password: "rm4nn"
+    password: "rm4nn",
+    half: "2/2",
   })
 });
 
