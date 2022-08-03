@@ -15,7 +15,7 @@ for (const btn of submitBtn) {
   const i = parseInt(btn.id.slice(-1)) - 1;
 
   btn.onclick = e => {
-    if (pwdField[i].value === team2[i]) {
+    if (pwdField[i].value === team1[i]) {
       console.log(true);
     } else {
       forbid(btn.parentElement);

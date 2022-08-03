@@ -16,7 +16,6 @@
      * you resize the browser window and the canvas goes will be cleared.
      */
     //draw();
-    setInterval(draw, 35);
   }
 
   resizeCanvas();
@@ -60,6 +59,7 @@
       drops[i]++;
     }
   }
+  setInterval(draw, 35);
 })();
 
 // setInterval(draw, 35);

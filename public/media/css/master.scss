@@ -180,6 +180,7 @@ button {
 }
 
 .c-password {
+  margin-bottom: 2em;
   padding: 1em;
 
   input[type="text"] {
@@ -250,5 +251,42 @@ button {
   a {
     display: inline-block;
     padding: 1em;
+  }
+}
+
+.c-pwdclue {
+  margin: 0 1em;
+
+  p {
+    display: inline-block;
+  }
+
+  .title {
+    margin-bottom: 1em;
+  }
+}
+
+.c-cluebox {
+  display: inline-block;
+  margin-bottom: 2em;
+  padding: 1em;
+  color: #fff;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.c-insight {
+  margin: 0 1em;
+
+  &-container {
+    font-size: 0.75rem;
+    min-height: 150px;
+    margin-top: 1em;
+    padding: 1em;
+    color: #fff;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    background-color: #000;
   }
 }

@@ -62,7 +62,8 @@ app.get("/Y3AxLTE=", (req: Request, res: Response) => {
     title: "Esimene vihje",
     password: team1[0],
     script: "/media/scripts/team_one_one.js",
-    className: "cp1-1"
+    className: "cp1-1",
+    clue: "Esimene vihje",
   })
 });
 
@@ -71,6 +72,9 @@ app.get("/Y3AxLTI=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Teine vihje",
     password: team1[1],
+    script: "/media/scripts/team_one_one.js",
+    className: "cp1-2",
+    clue: "Teine vihje",
   })
 });
 
@@ -79,6 +83,9 @@ app.get("/Y3AxLTM=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Kolmas vihje",
     password: team1[2],
+    script: "/media/scripts/team_one_one.js",
+    className: "cp1-3",
+    clue: "Kolmas vihje",
   })
 });
 
@@ -87,6 +94,9 @@ app.get("/Y3AxLTQ=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Neljas vihje",
     password: team1[3],
+    script: "/media/scripts/team_one_one.js",
+    className: "cp1-4",
+    clue: "Neljas vihje",
   })
 });
 
@@ -95,6 +105,9 @@ app.get("/Y3AxLTU=", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Viies vihje",
     password: team1[4],
+    script: "/media/scripts/team_one_one.js",
+    className: "cp1-5",
+    clue: "Viies vihje",
   })
 });
 
