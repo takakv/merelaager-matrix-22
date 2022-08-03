@@ -242,6 +242,7 @@ button {
 
 .c-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   padding: 0 1em;
