@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="et">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>{{title}}</title>
+  <link href="/media/css/master.min.css" rel="stylesheet" type="text/css"/>
+  <script async defer src="/media/scripts/matrix.js" type="module"></script>
+</head>
+<body>
+<canvas id="c"></canvas>
+{{>header}}
+<main role="main">
+  {{{body}}}
+  {{>password}}
+  <script src="{{script}}" type="module"></script>
+</main>
+{{>footer}}
+</body>
+</html>
