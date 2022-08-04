@@ -8,6 +8,17 @@ const team = team_id === 1 ? team2 : team1;
 const pwdField = document.getElementById("pwd");
 const submitBtn = [...document.getElementsByClassName("submit-btn")][0];
 
+const backBtn = document.getElementById("back-btn");
+const frontBtn = document.getElementById("front-btn");
+
+const btnId = parseInt(submitBtn.id);
+
+if (btnId === 1) backBtn.classList.add("is-hidden");
+else backBtn.href = `${backBtn.href}${btnId - 1}`;
+
+if (btnId === 5) frontBtn.href = `/t${team_id}/final`;
+else frontBtn.href = `${frontBtn.href}${btnId + 1}`;
+
 const cluebox = document.getElementById("clue");
 let tripwire = false;
 

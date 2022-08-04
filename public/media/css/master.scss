@@ -252,6 +252,10 @@ button {
   width: 100%;
   padding: 0 1em;
 
+  .is-hidden {
+    display: none;
+  }
+
   a {
     display: inline-block;
     padding: 1em;

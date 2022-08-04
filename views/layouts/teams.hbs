@@ -16,6 +16,17 @@
 <main role="main">
   {{>password}}
   {{{body}}}
+  <div class="c-navigation">
+    <a href="/">
+      <button class="c-back">Genees</button>
+    </a>
+    <a id="back-btn" href="/t{{team_id}}/">
+      <button class="c-back">Eelmine</button>
+    </a>
+    <a id="front-btn" href="/t{{team_id}}/">
+      <button class="c-back">Järgmine</button>
+    </a>
+  </div>
   <script src="/media/scripts/team_clues.js" type="module"></script>
 </main>
 {{>footer}}

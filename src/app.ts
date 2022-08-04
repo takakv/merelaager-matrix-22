@@ -187,7 +187,7 @@ app.get("/t2/5", (req: Request, res: Response) => {
 });
 
 // cp1-final
-app.get("/cp1f", (req: Request, res: Response) => {
+app.get("/t1/final", (req: Request, res: Response) => {
   res.render("final.hbs", {
     title: "Lõpp-parool 1",
     team_id: 1,
@@ -199,7 +199,7 @@ app.get("/cp1f", (req: Request, res: Response) => {
 });
 
 // cp2-final
-app.get("/2fcp", (req: Request, res: Response) => {
+app.get("/t2/final", (req: Request, res: Response) => {
   res.render("final.hbs", {
     title: "Lõpp-parool 2",
     team_id: 2,
