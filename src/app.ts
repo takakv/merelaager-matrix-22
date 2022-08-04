@@ -30,7 +30,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 // Backstory alpha
-app.get("/YWxwaGE=", (req: Request, res: Response) => {
+app.get("/bs/1", (req: Request, res: Response) => {
   res.render("bst1", {
     title: "Backstory 1",
     body_class: "landing",
@@ -39,7 +39,7 @@ app.get("/YWxwaGE=", (req: Request, res: Response) => {
 });
 
 // Backstory beta
-app.get("/YmV0YQ==", (req: Request, res: Response) => {
+app.get("/bs/2", (req: Request, res: Response) => {
   res.render("bst2", {
     title: "Backstory 2",
     body_class: "landing",
@@ -48,7 +48,7 @@ app.get("/YmV0YQ==", (req: Request, res: Response) => {
 });
 
 // Backstory gamma
-app.get("/Z2FtbWE=", (req: Request, res: Response) => {
+app.get("/bs/3", (req: Request, res: Response) => {
   res.render("bst3", {
     title: "Backstory 3",
     body_class: "landing",
@@ -57,22 +57,24 @@ app.get("/Z2FtbWE=", (req: Request, res: Response) => {
 });
 
 // cp1-1
-app.get("/Y3AxLTE=", (req: Request, res: Response) => {
+app.get("/t1/1", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Esimene vihje",
     password: team1[0],
+    placeholder: team2[0],
     team_id: 1,
     className: "cp1-1",
-    clue: "Projektirammes püstitati katsealale antenn, mis edastas infot peakontorisse. Tänaseks päevaks on sellest säilinud vaid betoonpost.",
+    clue: "Projektiraames püstitati katsealale antenn, mis edastas infot peakontorisse. Tänaseks päevaks on sellest säilinud vaid betoonpost.",
     btn_id: 1,
   })
 });
 
 // cp1-2
-app.get("/Y3AxLTI=", (req: Request, res: Response) => {
+app.get("/t1/2", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Teine vihje",
     password: team1[1],
+    placeholder: team2[1],
     className: "cp1-2",
     clue: "Keset põldu on turvatsoon, kus ei ole miine. Tänapäeval kasvab seal selle märgistamiseks puu, mis on teistest kõrgem. Seda puud on võimalik silmata hommikujooksu ringil.",
     team_id: 1,
@@ -81,10 +83,11 @@ app.get("/Y3AxLTI=", (req: Request, res: Response) => {
 });
 
 // cp1-3
-app.get("/Y3AxLTM=", (req: Request, res: Response) => {
+app.get("/t1/3", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Kolmas vihje",
     password: team1[2],
+    placeholder: team2[2],
     team_id: 1,
     className: "cp1-3",
     clue: "Et välismaailmast anomaaliasse saadetisi edastada, tekitati pakipostipunkt. Tänaseks päevaks on sellest alles vaid mälestus.",
@@ -93,10 +96,11 @@ app.get("/Y3AxLTM=", (req: Request, res: Response) => {
 });
 
 // cp1-4
-app.get("/Y3AxLTQ=", (req: Request, res: Response) => {
+app.get("/t1/4", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Neljas vihje",
     password: team1[3],
+    placeholder: team2[3],
     team_id: 1,
     className: "cp1-4",
     clue: "Hoomikujooksu ringil, et anomaaliat vältida, meeldib lastele joosta lühemat teed (lõigata). Lõikepunkti tähistab puu.",
@@ -105,10 +109,11 @@ app.get("/Y3AxLTQ=", (req: Request, res: Response) => {
 });
 
 // cp1-5
-app.get("/Y3AxLTU=", (req: Request, res: Response) => {
+app.get("/t1/5", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Viies vihje",
     password: team1[4],
+    placeholder: team2[4],
     team_id: 1,
     className: "cp1-5",
     clue: "Laste järelevalve teostamiseks lisati laagri kommandosse veok, mis kindlustas merepealse järelvalve.",
@@ -117,10 +122,11 @@ app.get("/Y3AxLTU=", (req: Request, res: Response) => {
 });
 
 // cp2-1
-app.get("/Y3AyLTE=", (req: Request, res: Response) => {
+app.get("/t2/1", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Esimene vihje",
     password: team2[0],
+    placeholder: team1[0],
     team_id: 2,
     className: "cp2-1",
     clue: "Neli jaama väljumispunkti aitasid ja aitavad lastel end anomaaliast kergendada. Jaama tähistab kaks sümbolit, mis on kõigile tänaseks ajju sööbinud.",
@@ -129,10 +135,11 @@ app.get("/Y3AyLTE=", (req: Request, res: Response) => {
 });
 
 // cp2-2
-app.get("/Y3AyLTI=", (req: Request, res: Response) => {
+app.get("/t2/2", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Teine vihje",
     password: team2[1],
+    placeholder: team1[1],
     team_id: 2,
     className: "cp2-2",
     clue: "Kaugjuhtimine on võimalik just selle vahendiga. Vanasti tüüriti sellega suurlaeva, siis kui see veel merel seilas.",
@@ -141,10 +148,11 @@ app.get("/Y3AyLTI=", (req: Request, res: Response) => {
 });
 
 // cp2-3
-app.get("/Y3AyLTM=", (req: Request, res: Response) => {
+app.get("/t2/3", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Kolmas vihje",
     password: team2[2],
+    placeholder: team1[2],
     team_id: 2,
     className: "cp2-3",
     clue: "Laagrisse saabudes tervitab külastajaid valvur, keda küll selles vahetuses ei ole. Säilinud on aga selle karvase valvuri puhkekoht.",
@@ -153,10 +161,11 @@ app.get("/Y3AyLTM=", (req: Request, res: Response) => {
 });
 
 // cp2-4
-app.get("/Y3AyLTQ=", (req: Request, res: Response) => {
+app.get("/t2/4", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Neljas vihje",
     password: team2[3],
+    placeholder: team1[3],
     team_id: 2,
     className: "cp2-4",
     clue: "Laagrialal on padrik, mis tagab lastele rohelisuse. Tüdrukud käivad seal tugeva anomaalia tõttu harva, ent poisid käivad seal sagedamini.",
@@ -165,10 +174,11 @@ app.get("/Y3AyLTQ=", (req: Request, res: Response) => {
 });
 
 // cp2-5
-app.get("/Y3AyLTU=", (req: Request, res: Response) => {
+app.get("/t2/5", (req: Request, res: Response) => {
   res.render("clue_gen.hbs", {
     title: "Viies vihje",
     password: team2[4],
+    placeholder: team1[4],
     team_id: 2,
     className: "cp2-5",
     clue: "Laste tervise monitoorimiseks lisati laste elamsikohta skanneeria, mis edastab hommikuti ja õhtuti andmeid laste tervise kohta.",
