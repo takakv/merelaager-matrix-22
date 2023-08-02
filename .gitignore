@@ -1,4 +1,15 @@
+.DS_Store
+
 node_modules/
 build/
 .idea/
 .env
+
+# Yarn stuff
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
